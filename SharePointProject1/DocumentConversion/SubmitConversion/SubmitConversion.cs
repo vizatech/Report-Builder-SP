@@ -7,14 +7,13 @@ using System.Web.UI.WebControls.WebParts;
 using Microsoft.SharePoint;
 using Microsoft.SharePoint.WebControls;
 
-namespace SharePointProject1.VisualWebPart1
+namespace DocumentConversion.SubmitConversion
 {
     [ToolboxItemAttribute(false)]
-    public class VisualWebPart1 : WebPart
+    public class SubmitConversion : WebPart
     {
         // Visual Studio might automatically update this path when you change the Visual Web Part project item.
-        private const string _ascxPath = @"~/_CONTROLTEMPLATES/15/SharePointProject1/VisualWebPart1/VisualWebPart1UserControl.ascx";
-
+        private const string _ascxPath = @"~/_CONTROLTEMPLATES/15/DocumentConversion/SubmitConversion/SubmitConversionUserControl.ascx";
 
         protected override void CreateChildControls()
         {
