@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="af2f71da-ed5c-4f77-bc9d-e65f0928698b" solutionId="af2f71da-ed5c-4f77-bc9d-e65f0928698b" resetWebServer="false" sharePointProductVersion="15.0" name="Nazar project" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="ebf37efe-ec95-46d0-ba2b-25954226691a" />
+  </features>
+</package>

@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <CustomAction Id="9b3d1a59-78ca-45da-aa2c-4964e3f68c58.AppHost-RCA"
+  RegistrationType="List"
+  RegistrationId="171"
+  Location="CommandUI.Ribbon"
+  Sequence="10001"
+  Title="Invoke &apos;AppHost_RCA&apos; action">
+    <CommandUIExtension>
+      <!--
+    Update the UI definitions below with the controls and the command actions
+    that you want to enable for the custom action.
+    -->
+      <CommandUIDefinitions>
+        <CommandUIDefinition Location="Ribbon.Tasks.Actions.Controls._children">
+          <Button Id="Ribbon.ListItem.Actions.AppHost-RCAButton"
+          Alt="Request App"
+          Sequence="100"
+          Command="Invoke_AppHost-RCAButtonRequest"
+          LabelText="Request App"
+          TemplateAlias="o1"
+          Image32by32="_layouts/15/images/placeholder32x32.png"
+          Image16by16="_layouts/15/images/placeholder16x16.png" />
+        </CommandUIDefinition>
+      </CommandUIDefinitions>
+      <CommandUIHandlers>
+        <CommandUIHandler Command="Invoke_AppHost-RCAButtonRequest"
+               CommandAction="javascript:
+    var ctx = SP.ClientContext.get_current();
+    var items = SP.ListOperation.Selection.getSelectedItems(ctx);
+    var myItems = '';
+    for (var k in items) {
+        myItems = items[k].id;
+    }
+    document.getElementById('ctl00_ctl33_g_eeb2a432_4ea8_47b3_baad_4ee99fa373cd_ctl00_SelectedIdField').value = myItems;
+
+    function getListItem(itemId, success) {
+        var ctx = SP.ClientContext.get_current();
+        var web = ctx.get_web();
+        var list = web.get_lists().getByTitle('Завдання');
+        var item = list.getItemById(itemId);
+        ctx.load(item);
+
+        ctx.executeQueryAsync(
+            function () {
+                success(item);
+            });
+    }
+
+    getListItem(myItems, function (item) {
+        var a = item.get_fieldValues();
+        var Items = {
+            DocID : a.i1o5,
+            DocType : a.yuol,
+            DocNumber : a.v1m7,
+            DocRegDate : a.tp5c,
+            DocDep : a.ptbb,
+            DocSub : a.u0ap,
+            OurSide : a.tnri,
+            Contragent : a.yt8g,
+            Manager : a.v3dd,
+            DocSignDate : a.h2lk,
+            Status : a.ik7j,
+            Lower1 : a.l8eh,
+            BookKeeper1 : a.ibfh,
+            Finance1 : a.gbqn,
+            FinDirector1 : a.aw9e,
+            Lower2 : a._x0065_c25,
+            BookKeeper2 : a._x006d_q04,
+            Finance2 : a._x0074_ti1,
+            FinDirector2 : a.ud7h,
+            CardCreatedDate : a.y5vg,
+            Author : a.kw6u,
+            Project : a.rvlm,
+            ArchBy : a._x006d_rs5,
+            ArchDate : a.cuof
+        };
+         document.getElementById('ctl00_ctl33_g_eeb2a432_4ea8_47b3_baad_4ee99fa373cd_ctl00_SelectedIdField').value = JSON.stringify(Items);
+         document.getElementById('ctl00_ctl33_g_eeb2a432_4ea8_47b3_baad_4ee99fa373cd_ctl00_UploadButton').click();
+    });
+
+    
+                          "/>
+      </CommandUIHandlers>
+    </CommandUIExtension >
+  </CustomAction>
+</Elements>
