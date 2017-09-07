@@ -1,0 +1,146 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6074701A-73FE-4DDB-8E0B-9EA7CF090B74}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EmployeeOrientation</RootNamespace>
+    <AssemblyName>EmployeeOrientation</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+    <MinimumOfficeToolsVersion>11.1</MinimumOfficeToolsVersion>
+    <IncludeAssemblyInPackage>False</IncludeAssemblyInPackage>
+    <ProjectMode>SharePointApp</ProjectMode>
+    <AppFeaturePartId>{4cea4939-743a-493c-9618-5e86c6b24e87}</AppFeaturePartId>
+    <WspPartId>{5bc4eb24-249f-44f4-b273-44f7c3f06230}</WspPartId>
+    <WorkflowPartId>{d8c597d2-b688-4af8-92a1-7e56e97c3365}</WorkflowPartId>
+    <CspkgPartId>{710c3a1b-3cd4-4aed-a75a-d7f7475744cd}</CspkgPartId>
+    <SqlPackagePartId>{073c920c-3a9a-40fb-a417-d45cbedd5df8}</SqlPackagePartId>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="Columns\DateOfArc\Elements.xml" />
+    <Content Include="Columns\ItemId\Elements.xml" />
+    <Content Include="Columns\Result\Elements.xml" />
+    <Content Include="Features\Feature1\Feature1.Template.xml">
+      <DependentUpon>Feature1.feature</DependentUpon>
+    </Content>
+    <Content Include="Lists\InputList\Elements.xml" />
+    <Content Include="Lists\InputList\InputListInstance\Elements.xml" />
+    <Content Include="Lists\InputList\Schema.xml" />
+    <Content Include="Lists\OutputList\Elements.xml" />
+    <Content Include="Lists\OutputList\OutputListInstance\Elements.xml" />
+    <Content Include="Lists\OutputList\Schema.xml" />
+    <Content Include="Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="Scripts\jquery-1.9.1.js" />
+    <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <None Include="Columns\DateOfArc\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{7bb6c730-112b-4484-8735-8978ab700e1b}</SharePointProjectItemId>
+    </None>
+    <None Include="Columns\ItemId\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{630bebc5-6de0-4726-ace5-45b3abeb3a2f}</SharePointProjectItemId>
+    </None>
+    <None Include="Columns\Result\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a354d505-77e6-4b60-943f-c321480caa08}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\Feature1\Feature1.feature">
+      <FeatureId>{8bd59264-5789-426a-b535-6c064380e75e}</FeatureId>
+    </None>
+    <None Include="Lists\InputList\InputListInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5568fd43-305c-46c5-8a25-8b0f8d938a1d}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\InputList\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c1868864-0c77-41df-948e-8e1c0170b5e1}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\OutputList\OutputListInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{fecf36fd-7579-453c-92c6-b24e4d339d47}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\OutputList\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{da6f399f-74ab-4744-94c2-5efa6eb93113}</SharePointProjectItemId>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{2b55ac3a-7ae2-49dc-b207-574528525541}</SharePointProjectItemId>
+    </None>
+    <Content Include="Pages\Elements.xml" />
+    <Content Include="Pages\Default.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Scripts\jquery-1.9.1.min.map" />
+    <None Include="Scripts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{073c920c-3a9a-40fb-a417-d45cbedd5df8}</SharePointProjectItemId>
+    </None>
+    <Content Include="Scripts\Elements.xml" />
+    <Content Include="Scripts\App.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a17f3bd5-34be-4f33-b92e-921836c8656c}</SharePointProjectItemId>
+    </None>
+    <Content Include="Content\Elements.xml" />
+    <Content Include="Content\App.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\AppIcon.png">
+      <OpcRelationship>manifest-icon</OpcRelationship>
+    </Content>
+    <Content Include="Images\Elements.xml" />
+    <None Include="Images\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a5a94829-4ef8-4586-8b59-0d2c226bdd51}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Package\Package.package">
+      <PackageId>{b0c292d5-81e0-4010-9901-603dc517bf05}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="Features\ItemArchivation\ItemArchivation.feature">
+      <FeatureId>{e3a2bf30-7025-4ff0-9c57-52d48ef78f08}</FeatureId>
+    </None>
+    <None Include="Features\ItemArchivation\ItemArchivation.Template.xml">
+      <DependentUpon>ItemArchivation.feature</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <AppManifestFile Include="AppManifest.xml">
+      <SubType>Designer</SubType>
+    </AppManifestFile>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ContentTypes\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

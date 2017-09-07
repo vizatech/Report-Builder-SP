@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="b0c292d5-81e0-4010-9901-603dc517bf05" solutionId="b0c292d5-81e0-4010-9901-603dc517bf05" resetWebServer="false" sharePointProductVersion="15.0" name="EmployeeOrientation" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="e3a2bf30-7025-4ff0-9c57-52d48ef78f08" />
+    <featureReference itemId="8bd59264-5789-426a-b535-6c064380e75e" />
+  </features>
+</package>

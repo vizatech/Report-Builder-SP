@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26430.6
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharePointProject1", "SharePointProject1\SharePointProject1.csproj", "{1CA5C601-04D5-4C6C-A11F-A73F1D97B3FF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ItemArchivation", "SharePointProject1\ItemArchivation.csproj", "{1CA5C601-04D5-4C6C-A11F-A73F1D97B3FF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentConversion", "DocumentConversion\DocumentConversion.csproj", "{777204DB-A7D0-4C89-98F2-79DF1D4402C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1P1ArchivationAddIn", "EmployeeOrientation\1P1ArchivationAddIn.csproj", "{6074701A-73FE-4DDB-8E0B-9EA7CF090B74}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,6 +27,12 @@ Global
 		{777204DB-A7D0-4C89-98F2-79DF1D4402C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{777204DB-A7D0-4C89-98F2-79DF1D4402C3}.Release|Any CPU.Build.0 = Release|Any CPU
 		{777204DB-A7D0-4C89-98F2-79DF1D4402C3}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{6074701A-73FE-4DDB-8E0B-9EA7CF090B74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6074701A-73FE-4DDB-8E0B-9EA7CF090B74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6074701A-73FE-4DDB-8E0B-9EA7CF090B74}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{6074701A-73FE-4DDB-8E0B-9EA7CF090B74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6074701A-73FE-4DDB-8E0B-9EA7CF090B74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6074701A-73FE-4DDB-8E0B-9EA7CF090B74}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

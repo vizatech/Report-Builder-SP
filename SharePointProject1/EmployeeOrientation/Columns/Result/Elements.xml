@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{fb68cdb9-8916-47ad-8e22-567e92081ec2}"
+       Name="Result"
+       DisplayName="Result"
+       Type="Choice"
+       Required="FALSE"
+       Group="Apps column">
+    <CHOICES>
+      <CHOICE>Not Started</CHOICE>
+      <CHOICE>Activated</CHOICE>
+      <CHOICE>Completed</CHOICE>
+    </CHOICES>
+    <MAPPINGS>
+      <MAPPING Value="1">Not Started</MAPPING>
+      <MAPPING Value="2">Activated</MAPPING>
+      <MAPPING Value="3">Completed</MAPPING>
+    </MAPPINGS>
+    <Default>Not Started</Default>
+  </Field>
+</Elements>

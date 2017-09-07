@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{970deba1-8d75-49b4-9d20-aaa302e9faaf}"
+       Name="ItemId"
+       DisplayName="Item Id"
+       Type="Text"
+       Required="FALSE"
+       Group="Apps column">
+  </Field>
+</Elements>

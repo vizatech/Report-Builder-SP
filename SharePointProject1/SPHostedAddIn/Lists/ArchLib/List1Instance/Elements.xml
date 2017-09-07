@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Source Documents" OnQuickLaunch="TRUE" TemplateType="101" Url="Lists/SourceDocuments" Description="Library for archivation">
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Title">Tom</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Satomi</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Cassi</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Lertchai</Field>
+        </Row>
+      </Rows>
+    </Data>
+  </ListInstance>
+</Elements>

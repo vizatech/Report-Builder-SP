@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--Created:cb85b80c-f585-40ff-8bfc-12ff4d0e34a9-->
+<App xmlns="http://schemas.microsoft.com/sharepoint/2012/app/manifest"
+     Name="ListItemArchivation"
+     ProductID="{2b55ac3a-7ae2-49dc-b207-574528525541}"
+     Version="4.0.0.0"
+     SharePointMinVersion="15.0.0.0"
+>
+  <Properties>
+    <StartPage>~appWebUrl/Pages/Default.aspx?{StandardTokens}</StartPage>
+    <Title>Item archivation</Title>
+  </Properties>
+
+  <AppPrincipal>
+    <Internal />
+  </AppPrincipal>
+  <AppPermissionRequests>
+  </AppPermissionRequests>
+</App>

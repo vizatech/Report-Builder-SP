@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Pages">
+    <File Path="Pages\Default.aspx" Url="Pages/Default.aspx" ReplaceContent="TRUE" >
+      <AllUsersWebPart WebPartZoneID="HomePageZone" WebPartOrder="1">
+        <![CDATA[
+        <webParts>
+          <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+          
+              <metaData>
+                <type name="Microsoft.SharePoint.WebPartPages.XsltListViewWebPart, 
+                             Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, 
+                             PublicKeyToken=71e9bce111e9429c" />
+              </metaData>
+              
+              <data>
+                <properties>                
+                  <property name="Title">Custom List</property>
+                  <property name="ListUrl">Lists/InputList</property>
+                  <property name="IsIncluded">True</property>
+                  <property name="NoDefaultStyle">false</property>
+                  <property name="PageType">PAGE_NORMALVIEW</property>
+                  <property name="Default">true</property>
+                  <property name="ViewContentTypeId">0x</property>
+                </properties>
+              </data>
+              
+            </webPart>        
+          </webParts>
+        ]]>
+      </AllUsersWebPart>
+    </File>
+  </Module>
+</Elements>
