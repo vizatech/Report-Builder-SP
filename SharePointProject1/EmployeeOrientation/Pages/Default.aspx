@@ -31,23 +31,32 @@
 <%-- The markup and script in the following Content element will be placed in the <body> of the page --%>
 <asp:Content ContentPlaceHolderID="PlaceHolderMain" runat="server">
 
-    <%-- Group of links to pages--%>
+    <%-- Navigation Group of links to pages--%>
     <p>
         <asp:HyperLink runat="server" 
         NavigateUrl="JavaScript:window.location = _spPageContextInfo.webAbsoluteUrl + '/Lists/InputList/AllItems.aspx';" 
         Text="Input list" />
+
         <asp:HyperLink runat="server" 
         NavigateUrl="JavaScript:window.location = _spPageContextInfo.webAbsoluteUrl + '/Lists/OutputList/AllItems.aspx';" 
         Text="Output list" />
+
+        <asp:HyperLink runat="server" 
+        NavigateUrl="JavaScript:window.location = _spPageContextInfo.webAbsoluteUrl + '/Pages/ChrisOBrienWebParts.aspx';" 
+        Text="Chris O'Brien webparts" />
+
+        <asp:HyperLink runat="server" 
+        NavigateUrl="JavaScript:window.location = _spPageContextInfo.webAbsoluteUrl + '/Pages/PureWebPart.aspx';" 
+        Text="Pure webpart for test" />
     </p>
     <br />
 
-<%-- 
-    <h1>Including of custom to list</h1>
+    <h1>Custom webpart zone</h1>
     <br />   
     <WebPartPages:WebPartZone runat="server" FrameType="TitleBarOnly" ID="HomePageZone" Title="loc:full" />
     <br />
 
+<%-- 
     <h1>XsltListView web part:</h1>
     <br />   
     <WebPartPages:WebPartZone runat="server" FrameType="TitleBarOnly" ID="WebPartZone2">

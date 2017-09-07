@@ -45,6 +45,7 @@
     <Content Include="Columns\DateOfArc\Elements.xml" />
     <Content Include="Columns\ItemId\Elements.xml" />
     <Content Include="Columns\Result\Elements.xml" />
+    <Content Include="ContentTypes\ArchivatedDocument\Elements.xml" />
     <Content Include="Features\Feature1\Feature1.Template.xml">
       <DependentUpon>Feature1.feature</DependentUpon>
     </Content>
@@ -54,9 +55,17 @@
     <Content Include="Lists\OutputList\Elements.xml" />
     <Content Include="Lists\OutputList\OutputListInstance\Elements.xml" />
     <Content Include="Lists\OutputList\Schema.xml" />
+    <Content Include="Pages\ChrisOBrienWebParts.aspx" />
+    <Content Include="Pages\PureWebPart.aspx" />
     <Content Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <Content Include="WebParts\ChrisOBrienWebParts\Elements.xml">
+      <OpcRelationship>feature-elementmanifest</OpcRelationship>
+    </Content>
+    <Content Include="WebParts\PureWebPart\Elements.xml">
+      <OpcRelationship>feature-elementmanifest</OpcRelationship>
+    </Content>
     <None Include="Columns\DateOfArc\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{7bb6c730-112b-4484-8735-8978ab700e1b}</SharePointProjectItemId>
     </None>
@@ -65,6 +74,9 @@
     </None>
     <None Include="Columns\Result\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{a354d505-77e6-4b60-943f-c321480caa08}</SharePointProjectItemId>
+    </None>
+    <None Include="ContentTypes\ArchivatedDocument\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{165aa5b9-ba3e-4812-9f2f-010462bc3073}</SharePointProjectItemId>
     </None>
     <None Include="Features\Feature1\Feature1.feature">
       <FeatureId>{8bd59264-5789-426a-b535-6c064380e75e}</FeatureId>
@@ -87,6 +99,12 @@
     </None>
     <Content Include="Pages\Elements.xml" />
     <Content Include="Pages\Default.aspx" />
+    <None Include="WebParts\ChrisOBrienWebParts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{aaf2c740-a2ba-4f71-90fa-fe26f120a060}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\PureWebPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{2f52f64c-3efa-4125-8f11-991ddabb76ac}</SharePointProjectItemId>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="Scripts\jquery-1.9.1.min.map" />
@@ -132,10 +150,18 @@
     </AppManifestFile>
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Activities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ContentTypes\" />
+    <Reference Include="Microsoft.SharePoint.DesignTime.Activities, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Activities" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel.Activities" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

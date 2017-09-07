@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="5955cf8d-5dcc-40bc-adb8-0f7a943a6337" solutionId="5955cf8d-5dcc-40bc-adb8-0f7a943a6337" resetWebServer="false" sharePointProductVersion="15.0" name="ArchEventReceiver" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="ff5280a6-e8ac-4bf9-a829-2e44d3c8922b" />
+  </features>
+</package>

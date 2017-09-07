@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x0100F9CCBBF8AD704BB5961BF037ABDEB9F4" Name="ArchivatedDocument" Group="Apps Column" Description="Represents document added to archive" Inherits="FALSE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{f4f4fd1d-b308-4a20-ba10-352a4de78af7}" DisplayName="Date Of Arch" Required="FALSE" Name="DateOfArc" />
+      <FieldRef ID="{970deba1-8d75-49b4-9d20-aaa302e9faaf}" DisplayName="Item Id" Required="FALSE" Name="ItemId" />
+      <FieldRef ID="{fb68cdb9-8916-47ad-8e22-567e92081ec2}" DisplayName="Result" Required="TRUE" Name="Result" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

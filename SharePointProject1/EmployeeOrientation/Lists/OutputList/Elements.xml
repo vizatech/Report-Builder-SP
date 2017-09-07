@@ -9,6 +9,6 @@
         SecurityBits="11"
         Sequence="410"
         DisplayName="OutputList"
-        Description="My List Definition"
+        Description="There are saved archivated files in the library"
         Image="/_layouts/15/images/itgen.png"/>
 </Elements>

@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentConversion", "Docum
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1P1ArchivationAddIn", "EmployeeOrientation\1P1ArchivationAddIn.csproj", "{6074701A-73FE-4DDB-8E0B-9EA7CF090B74}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArchEventReceiver", "ArchEventReceiver\ArchEventReceiver.csproj", "{262C6000-BFA0-4FA5-9A08-75DE97A43EF0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,12 @@ Global
 		{6074701A-73FE-4DDB-8E0B-9EA7CF090B74}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6074701A-73FE-4DDB-8E0B-9EA7CF090B74}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6074701A-73FE-4DDB-8E0B-9EA7CF090B74}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{262C6000-BFA0-4FA5-9A08-75DE97A43EF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{262C6000-BFA0-4FA5-9A08-75DE97A43EF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{262C6000-BFA0-4FA5-9A08-75DE97A43EF0}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{262C6000-BFA0-4FA5-9A08-75DE97A43EF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{262C6000-BFA0-4FA5-9A08-75DE97A43EF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{262C6000-BFA0-4FA5-9A08-75DE97A43EF0}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

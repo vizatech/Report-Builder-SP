@@ -30,5 +30,7 @@
         ]]>
       </AllUsersWebPart>
     </File>
+    <File Path="Pages\ChrisOBrienWebParts.aspx" Url="Pages/ChrisOBrienWebParts.aspx" ReplaceContent="TRUE" />
+    <File Path="Pages\PureWebPart.aspx" Url="Pages/PureWebPart.aspx" ReplaceContent="TRUE" />
   </Module>
 </Elements>

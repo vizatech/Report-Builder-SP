@@ -3,7 +3,7 @@
   <Field
        ID="{f4f4fd1d-b308-4a20-ba10-352a4de78af7}"
        Name="DateOfArc"
-       DisplayName="DateOfArc"
+       DisplayName="Date Of Arch"
        Type="DateTime"
        Required="FALSE"
        Group="Apps column">

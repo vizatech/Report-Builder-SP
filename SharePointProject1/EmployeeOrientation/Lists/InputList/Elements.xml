@@ -9,6 +9,6 @@
         SecurityBits="11"
         Sequence="410"
         DisplayName="InputList"
-        Description="My List Definition"
+        Description="There are files prepared for archivation but not proseeded yet"
         Image="/_layouts/15/images/itgen.png"/>
 </Elements>
